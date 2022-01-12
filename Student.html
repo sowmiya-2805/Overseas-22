@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Overseas@22 - Student login</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!--
+
+TemplateMo 546 Sixteen Clothing
+
+https://templatemo.com/tm-546-sixteen-clothing
+
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/forms_style.css">
+<style>
+      body{
+          background-color: #000000;
+      
+      }
+      header .navbar {
+  padding: 1px 0px;
+}
+.button {
+  background-color: #f33f3f;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+    </style>
+  </head>
+
+  <body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h2><b>Overseas<em>@22</em></h2></a></b>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"><b>Home</b>
+                </a>
+              </li> 
+              <li class="nav-item active">
+                <a class="nav-link" href="Student.html"><b>Student</b>
+                <span class="sr-only">(current)</span>
+              </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Professor.html"><b>Professor</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Counselling.html"><b>Counselling</b></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <div class="page-heading products-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-content">
+              <h4>Welcome champ!</h4>
+              <h4>We help to you to build your future in best possible way</h4>
+              <br>
+              <p>We have a repository of all the necessary details you require for doing Masters. Make your identity by creating a student Id.Professors who will guide you in doing Research papers, Teammates with whom you are gonna discuss with and Counsellors from whom you will take assistance will know you through this ID. </p>
+              <br><br>
+              <h5><font color='white'>CREATE A STUDENT ACCOUNT AND THEN LOGIN USING MAIL AND PASSWORD</font></h5>
+              <br><br>
+                           <button type="button" class="button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><b>Signup</button>
+                           <button type="button" class="button" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</b></button>
+
+                           <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="php/student_form.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <h4>Student sign-in form</h4><br>
+      <img src="assets/images/form.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container"><font color=#f33f3f>
+      <br>
+      <label ><b>First_Name</b></label>
+      <input class="button-bg" type="text" placeholder="What's your good name?" name="First_Name" required><br><br><br>
+      
+      <label ><b>Last_Name</b></label>
+      <input class="button-bg" type="text" placeholder="What's your surname?" name="Last_Name"  ><br><br><br>
+
+      <label><b>E_mail</b></label>
+      <input class="button-bg" type="text" placeholder="Give us your mail-id" name="E_mail" required><br><br><br>
+
+      <label><b>Password</b></label>
+      <input class="button-bg" type="password" placeholder="A safe password with maximum of 8 characters" name="Password" required ><br><br><br>
+
+      <label><b>Age</b></label>
+      <input class="button-bg" type="text" placeholder="How old are you?" name="Age"  required><br><br><br>
+      
+      <label><b>Gender</b></label>
+      <input class="button-bg" type="text" placeholder="M or F?" name="Gender" required><br><br><br>
+      
+      <label><b>Nationality</b></label>
+      <input class="button-bg" type="text" placeholder="type in your country" name="Nationality" required><br><br><br>
+      
+      <label><b>Current_Semester</b></label>
+      <input class="button-bg" type="text" placeholder="type in the semester as number?" name="Current_Semester" required><br><br><br>
+      
+      <label><b>Planned_term</b></label>
+      <input class="button-bg" type="text" placeholder="type in the year that you are planning to go abroad?" name="Planned_term" required><br><br><br>
+      
+      <label><b>College</b></label>
+      <input class="button-bg" type="text" placeholder="Which college are you graduated from?" name="College" required><br><br><br>
+      
+      <label ><b>Technology</b></label>
+      <input class="button-bg" type="text" placeholder="Which technology are you crazy about?" name="Technology" required><br><br><br>
+      
+      <label ><b>Aimed_University</b></label>
+      <input class="button-bg" type="text" placeholder="Which University do you aim?" name="Aimed_University" required><br><br><br><br>
+        
+     <button type="submit"><font color="black"><b>Submit</b></button>
+      </font></font>
+    </div>
+  </form>
+</div>
+
+
+<div id="id02" class="modal">
+  
+  <form class="modal-content animate" action="php/student_login.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <h4>Student Log-in form</h4><br>
+      <img src="assets/images/form.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container"><font color=#f33f3f>
+      <br>
+      
+      <label><b>E_mail</b></label>
+      <input class="button-bg" type="text" placeholder="Mail-id" name="E_mail" required><br><br><br>
+
+      <label><b>Password</b></label>
+      <input class="button-bg" type="password" placeholder="Password" name="Password" required ><br><br><br>
+
+     <button type="submit"><font color="black"><b>Login</b></button>
+      </font></font>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    
+  <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="inner-content">
+              <p>Copyright &copy; 2020 Overseas@22 Co., Ltd.
+            
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+          
+
+    
+    
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+
+  </body>
+
+</html>
